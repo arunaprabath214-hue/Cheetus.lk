@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
-import { ArrowRight, Play, ShieldCheck, Sparkles } from "lucide-react";
+import { ArrowRight, ShieldCheck, Sparkles, Factory } from "lucide-react";
 import { useApply } from "./ApplyContext";
 import { useLang } from "@/lib/i18n";
 
@@ -125,23 +125,19 @@ export function Hero() {
                 animate={{ y: [0, -6, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
               />
-              <p className="mt-4 text-lg font-semibold tracking-wide">GROW WITH US</p>
-              <p className="mt-1 text-xs uppercase tracking-[0.25em] opacity-80">PV 00279330</p>
+              <p className="mt-4 text-lg font-semibold tracking-wide">දේශීය දියුණුවට එකට</p>
+              <p className="mt-1 text-xs uppercase tracking-[0.25em] opacity-80">ශ්‍රී ලාංකීය කර්මාන්ත හා ව්‍යාපාර දියුණුව</p>
 
               <div className="mt-6 inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-1.5 text-xs font-medium backdrop-blur">
                 <Sparkles className="h-3.5 w-3.5" />
-                Premium Member Experience
+                කර්මාන්ත • ව්‍යාපාර • දියුණුව
               </div>
             </motion.div>
 
-            {/* Play overlay (decorative, ready for future video) */}
-            <button
-              type="button"
-              aria-label="Play intro"
-              className="absolute bottom-5 right-5 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/90 text-primary shadow-elegant transition-transform hover:scale-105"
-            >
-              <Play className="h-5 w-5 fill-current" />
-            </button>
+            <div className="absolute bottom-5 right-5 inline-flex items-center gap-2 rounded-full bg-white/90 px-4 py-2 text-xs font-semibold text-charcoal shadow-soft">
+              <Factory className="h-4 w-4 text-primary" />
+              ශ්‍රී ලංකාව වෙනුවෙන්
+            </div>
           </div>
         </motion.div>
       </div>
