@@ -1,0 +1,42 @@
+name: Refresh Bun lockfile and verify build
+
+on:
+  push:
+    branches:
+      - fix/tanstack-start-security
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-lockfile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Update TanStack Start and refresh lockfile
+        run: bun update @tanstack/react-start
+
+      - name: Verify frozen lockfile install
+        run: bun install --frozen-lockfile
+
+      - name: Verify production build
+        run: bun run build
+
+      - name: Commit refreshed lockfile
+        run: |
+          if git diff --quiet -- package.json bun.lock; then
+            echo "No package or lockfile changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add package.json bun.lock
+          git commit -m "Refresh lockfile for secure TanStack Start"
+          git push
