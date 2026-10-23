@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin-review
+Disallow: /api/
+
+Sitemap: https://cheetus.lk/sitemap.xml
