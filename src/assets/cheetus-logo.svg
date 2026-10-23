@@ -1,1 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffb300"/><stop offset="1" stop-color="#f57c00"/></linearGradient></defs><circle cx="100" cy="100" r="94" fill="white"/><circle cx="100" cy="100" r="82" fill="none" stroke="url(#g)" stroke-width="18"/><path d="M58 126c10-35 30-52 58-52 12 0 23 3 33 9" fill="none" stroke="#f57c00" stroke-width="9" stroke-linecap="round"/><path d="M126 62l26 21-31 9" fill="#f57c00"/><text x="100" y="151" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#f57c00">CHEETUS</text><text x="100" y="169" text-anchor="middle" font-family="Arial,sans-serif" font-size="7" letter-spacing="2" fill="#555">GROW WITH US</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+<title id="title">Cheetus Investment Industrial Development (PVT) LTD</title>
+<desc id="desc">Official Cheetus emblem with growth chart, upward arrow, company name, Grow With Us slogan, and PV 00279330 registration number.</desc>
+<defs>
+ <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffad00"/><stop offset=".52" stop-color="#ff7900"/><stop offset="1" stop-color="#e95a00"/></linearGradient>
+ <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffdb00"/><stop offset="1" stop-color="#ff8a00"/></linearGradient>
+ <path id="topArc" d="M 72,256 A184,184 0 0,1 440,256"/>
+ <path id="bottomArc" d="M 75,276 A181,181 0 0,0 437,276"/>
+</defs>
+<rect width="512" height="512" rx="62" fill="url(#orange)"/>
+<circle cx="256" cy="256" r="211" fill="#fff" stroke="#171717" stroke-width="5"/>
+<circle cx="256" cy="256" r="193" fill="url(#orange)" stroke="#171717" stroke-width="3"/>
+<circle cx="256" cy="256" r="177" fill="none" stroke="#fff" stroke-width="2" opacity=".5"/>
+<text fill="#101010" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800" letter-spacing="1.15"><textPath href="#topArc" startOffset="50%" text-anchor="middle">CHEETUS INVESTMENT INDUSTRIAL DEVELOPMENT (PVT) LTD.</textPath></text>
+<rect x="165" y="242" width="43" height="99" fill="url(#bar)" stroke="#e87800" stroke-width="1.5"/>
+<rect x="220" y="205" width="43" height="136" fill="url(#bar)" stroke="#e87800" stroke-width="1.5"/>
+<rect x="275" y="162" width="43" height="179" fill="url(#bar)" stroke="#e87800" stroke-width="1.5"/>
+<path d="M173 229 L222 169 L245 183 L300 113" fill="none" stroke="#fff" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M279 117 L304 105 L300 134" fill="none" stroke="#fff" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="256" y="379" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="900" text-anchor="middle" transform="rotate(-1 256 379)">GROW WITH US</text>
+<path d="M112 390 L128 414 L96 414 Z" fill="#111" transform="rotate(180 112 402)"/>
+<path d="M400 390 L416 414 L384 414 Z" fill="#111" transform="rotate(180 400 402)"/>
+<text fill="#111" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="900" letter-spacing="1"><textPath href="#bottomArc" startOffset="50%" text-anchor="middle">★ PV 00279330 ★</textPath></text>
+</svg>
