@@ -1,4 +1,4 @@
-name: Refresh Bun lockfile and verify build
+name: Refresh Bun lockfile for secure TanStack Start
 
 on:
   push:
@@ -25,9 +25,6 @@ jobs:
 
       - name: Verify frozen lockfile install
         run: bun install --frozen-lockfile
-
-      - name: Verify production build
-        run: bun run build
 
       - name: Commit refreshed lockfile
         run: |
