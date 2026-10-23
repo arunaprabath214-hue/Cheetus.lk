@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { ArrowRight, ShieldCheck, Sparkles, Factory } from "lucide-react";
 import { useApply } from "./ApplyContext";
 import { useLang } from "@/lib/i18n";
-import cheetusLogo from "@/assets/cheetus-logo.svg";
+import { cheetusOfficialLogo } from "@/lib/cheetus-logo";
 
 export function Hero() {
   const { setOpen } = useApply();
@@ -120,7 +120,7 @@ export function Hero() {
               transition={{ duration: 1, delay: 0.3 }}
             >
               <motion.img
-                src={cheetusLogo}
+                src={cheetusOfficialLogo}
                 alt="Cheetus"
                 className="h-32 w-32 drop-shadow-[0_8px_24px_rgba(0,0,0,0.25)] md:h-40 md:w-40"
                 animate={{ y: [0, -6, 0] }}
@@ -164,7 +164,7 @@ export function Hero() {
                 className="absolute inset-0 -m-16 rounded-full bg-gradient-glow"
               />
               <img
-                src={cheetusLogo}
+                src={cheetusOfficialLogo}
                 alt="Cheetus"
                 className="relative h-40 w-40 md:h-52 md:w-52 drop-shadow-[0_12px_40px_rgba(255,140,40,0.5)]"
               />
