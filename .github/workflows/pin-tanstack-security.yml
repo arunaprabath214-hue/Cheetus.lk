@@ -1,0 +1,39 @@
+name: Pin security-fixed TanStack Start
+
+on:
+  push:
+    branches:
+      - fix/tanstack-start-security
+
+permissions:
+  contents: write
+
+jobs:
+  pin-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Pin the minimum security-fixed version and refresh lockfile
+        run: bun add --exact @tanstack/react-start@1.168.60
+
+      - name: Verify lockfile consistency
+        run: bun install --frozen-lockfile
+
+      - name: Commit dependency files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add package.json bun.lock
+          if git diff --cached --quiet; then
+            echo "Dependency files already match."
+            exit 0
+          fi
+          git commit -m "Pin TanStack Start to security-fixed release"
+          git push
