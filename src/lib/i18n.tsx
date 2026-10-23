@@ -8,10 +8,10 @@ const Context = createContext<Ctx | null>(null);
 
 export const DICT = {
   pvBadge: { si: "ශ්‍රී ලංකාවේ ලියාපදිංචි සමාගමක් · PV 00279330", en: "Registered in Sri Lanka · PV 00279330" },
-  heroTitle: { si: "අපේ රටේ කර්මාන්ත දියුණු කරමු. දේශීය ව්‍යාපාරවලට අලුත් අවස්ථා හදමු.", en: "Helping Sri Lankan industries and local businesses move forward." },
+  heroTitle: { si: "අපේ රටේ කර්මාන්තත්, දේශීය ව්‍යාපාරත් එකට දියුණු කරමු.", en: "Let’s help Sri Lankan industries and local businesses grow together." },
   heroSub: {
-    si: "Cheetus සමාගම චීට්ටු වැඩසටහනක් ක්‍රියාත්මක කරන අතර, ශ්‍රී ලාංකීය කර්මාන්ත හා දේශීය ව්‍යාපාර දියුණු කිරීමත් අපේ අරමුණක්.",
-    en: "Cheetus runs a cheetu programme and also aims to contribute to the development of Sri Lankan industries and local businesses.",
+    si: "Cheetus චීට්ටු වැඩසටහනත් ක්‍රියාත්මක කරනවා. ඒ වගේම, ශ්‍රී ලංකාවේ කර්මාන්ත සහ දේශීය ව්‍යාපාර ඉදිරියට ගෙන යාමටත් අපි කැපවී සිටිනවා.",
+    en: "Cheetus runs a cheetu programme and is also committed to helping Sri Lankan industries and local businesses move forward.",
   },
   getStarted: { si: "අප හා සම්බන්ධ වන්න", en: "Get in Touch" },
   skipIntro: { si: "මග හරින්න", en: "Skip intro" },
