@@ -18,11 +18,25 @@ import { LanguageProvider } from "@/lib/i18n";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Cheetus — Structured Member Registration & Cheetu Management" },
-      { name: "description", content: "Premium member registration, KYC document processing, and structured cheetu management support in Sri Lanka. Registered PV 00279330." },
-      { property: "og:title", content: "Cheetus — A Structured Member Process for Your Financial Goal" },
-      { property: "og:description", content: "Member registration, KYC documentation, and structured cheetu management support in one organized platform." },
+      {
+        title: "Cheetus | සීට්ටු සාමාජික ලියාපදිංචිය සහ කළමනාකරණ සහාය",
+      },
+      {
+        name: "description",
+        content:
+          "ශ්‍රී ලංකාවේ සීට්ටු සාමාජික ලියාපදිංචිය, KYC ලේඛන ක්‍රියාවලිය සහ සාමාජික සහාය පිළිබඳ විස්තර දැනගන්න. Cheetus, Nugawela, Kandy.",
+      },
+      {
+        property: "og:title",
+        content: "Cheetus | සීට්ටු සාමාජික ලියාපදිංචිය සහ කළමනාකරණ සහාය",
+      },
+      {
+        property: "og:description",
+        content:
+          "ශ්‍රී ලංකාවේ සීට්ටු සාමාජික ලියාපදිංචිය සහ KYC ලේඛන ක්‍රියාවලිය පිළිබඳ විස්තර දැනගන්න.",
+      },
     ],
+    links: [{ rel: "canonical", href: "https://cheetus.lk/" }],
   }),
   component: Index,
 });

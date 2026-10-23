@@ -9,9 +9,14 @@ import { SITE } from "@/lib/site";
 export const Route = createFileRoute("/terms")({
   head: () => ({
     meta: [
-      { title: "Terms & Conditions — Cheetus" },
-      { name: "description", content: "Terms and conditions for Cheetus member registration and structured cheetu management support." },
+      { title: "Cheetus | නියමයන් සහ කොන්දේසි" },
+      {
+        name: "description",
+        content:
+          "Cheetus සාමාජික ලියාපදිංචිය, KYC ලේඛන සහ සේවා ක්‍රියාවලියට අදාළ නියමයන් සහ කොන්දේසි.",
+      },
     ],
+    links: [{ rel: "canonical", href: "https://cheetus.lk/terms" }],
   }),
   component: () => (
     <LanguageProvider>
