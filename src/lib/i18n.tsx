@@ -7,8 +7,9 @@ type Ctx = { lang: Lang; setLang: (l: Lang) => void; t: (k: keyof typeof DICT) =
 const Context = createContext<Ctx | null>(null);
 
 export const DICT = {
-  pvBadge: { si: "ශ්‍රී ලංකාවේ ලියාපදිංචි සමාගමකි. · PV 00279330", en: "A company registered in Sri Lanka · PV 00279330" },
-  heroTitle: { si: "ඔබගේ මූල්‍ය ඉලක්කයට ගැළපෙන විධිමත් සීට්ටු වැඩසටහනක්.", en: "A structured seettu programme to suit your financial goals." },
+  pvBadge: { si: "ශ්‍රී ලංකාවේ ලියාපදිංචි සමාගමකි.", en: "A company registered in Sri Lanka." },
+  heroTitle: { si: "ඔබගේ මූල්‍ය ඉලක්කයට ගැළපෙන", en: "A structured seettu programme" },
+  heroTitleBlack: { si: "විධිමත් සීට්ටු වැඩසටහනක්.", en: "to suit your financial goals." },
   heroSub: {
     si: "දේශීය කර්මාන්ත නගා සිටුවීමට අපෙන් පුංචි සහයෝගයක්.",
     en: "A small contribution from us to help strengthen Sri Lankan industries.",
