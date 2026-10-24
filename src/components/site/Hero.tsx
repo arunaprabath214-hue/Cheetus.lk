@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
-import { ArrowRight, ShieldCheck, Factory, Handshake, Store } from "lucide-react";
+import { ArrowRight, ShieldCheck, Factory, FileText } from "lucide-react";
 import { useApply } from "./ApplyContext";
 import { useLang } from "@/lib/i18n";
 import { cheetusOfficialLogo } from "@/lib/cheetus-logo";
@@ -8,7 +8,7 @@ import { SITE } from "@/lib/site";
 
 export function Hero() {
   const { setOpen } = useApply();
-  const { lang, t } = useLang();
+  const { t } = useLang();
   const [transitioning, setTransitioning] = useState(false);
 
   useEffect(() => {
@@ -75,19 +75,12 @@ export function Hero() {
               href="#process"
               className="inline-flex items-center gap-2 rounded-full border border-orange-200 bg-white/85 px-7 py-3.5 text-sm font-semibold text-charcoal transition-colors hover:border-primary/50 hover:text-primary"
             >
+              <FileText className="h-4 w-4" />
               {t("howItWorks")}
             </a>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.7, delay: 0.45 }}
-            className="mt-9 flex flex-wrap gap-x-6 gap-y-3 text-sm font-medium text-charcoal-soft"
-          >
-            <span className="inline-flex items-center gap-2"><Factory className="h-4 w-4 text-primary" /> ශ්‍රී ලාංකීය කර්මාන්ත</span>
-            <span className="inline-flex items-center gap-2"><Store className="h-4 w-4 text-primary" /> දේශීය ව්‍යාපාර</span>
-          </motion.div>
+
         </div>
 
         <motion.div
