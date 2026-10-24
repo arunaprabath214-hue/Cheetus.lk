@@ -7,15 +7,15 @@ type Ctx = { lang: Lang; setLang: (l: Lang) => void; t: (k: keyof typeof DICT) =
 const Context = createContext<Ctx | null>(null);
 
 export const DICT = {
-  pvBadge: { si: "ශ්‍රී ලංකාවේ ලියාපදිංචි සමාගමක් · PV 00279330", en: "Registered in Sri Lanka · PV 00279330" },
-  heroTitle: { si: "අපේ රටේ කර්මාන්තත්, දේශීය ව්‍යාපාරත් එකට දියුණු කරමු.", en: "Let’s help Sri Lankan industries and local businesses grow together." },
+  pvBadge: { si: "ශ්‍රී ලංකාවේ ලියාපදිංචි සමාගමකි. · PV 00279330", en: "A company registered in Sri Lanka · PV 00279330" },
+  heroTitle: { si: "ඔබගේ මූල්‍ය ඉලක්කයට ගැළපෙන විධිමත් සීට්ටු වැඩසටහනක්.", en: "A structured seettu programme to suit your financial goals." },
   heroSub: {
-    si: "Cheetus චීට්ටු වැඩසටහනත් ක්‍රියාත්මක කරනවා. ඒ වගේම, ශ්‍රී ලංකාවේ කර්මාන්ත සහ දේශීය ව්‍යාපාර ඉදිරියට ගෙන යාමටත් අපි කැපවී සිටිනවා.",
-    en: "Cheetus runs a cheetu programme and is also committed to helping Sri Lankan industries and local businesses move forward.",
+    si: "දේශීය කර්මාන්ත නගා සිටුවීමට අපෙන් පුංචි සහයෝගයක්.",
+    en: "A small contribution from us to help strengthen Sri Lankan industries.",
   },
   getStarted: { si: "අප හා සම්බන්ධ වන්න", en: "Get in Touch" },
   skipIntro: { si: "මග හරින්න", en: "Skip intro" },
-  howItWorks: { si: "සීට්ටු වැඩසටහන ගැන", en: "About the Cheetu Programme" },
+  howItWorks: { si: "සීට්ටු වැඩසටහන ගැන දැනගන්න", en: "Learn About the Seettu Programme" },
   applyNow: { si: "ලියාපදිංචි වන්න", en: "Register" },
 
   benefitsTitle: { si: "අපි කටයුතු කරන ආකාරය", en: "How We Work" },
