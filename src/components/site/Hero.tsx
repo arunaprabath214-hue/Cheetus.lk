@@ -43,9 +43,9 @@ export function Hero() {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.65, delay: 0.08 }}
-            className="mt-7 max-w-3xl text-[2.15rem] font-bold leading-[1.22] tracking-tight text-charcoal sm:text-5xl md:text-[3.35rem] xl:text-[3.7rem]"
+            className="mt-6 max-w-3xl text-[2rem] font-extrabold leading-[1.18] tracking-tight text-charcoal sm:text-5xl md:text-[3.15rem] xl:text-[3.45rem]"
           >
-            <span>{t("heroTitle")}</span>
+            <span className="block text-orange-600">{t("heroTitle")}</span>
           </motion.h1>
 
           <motion.p
