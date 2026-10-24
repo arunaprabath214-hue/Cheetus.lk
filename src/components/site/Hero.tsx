@@ -22,7 +22,7 @@ export function Hero() {
   const handleStart = () => setTransitioning(true);
 
   return (
-    <section id="home" className="relative isolate overflow-hidden pt-28 md:pt-32">
+    <section id="home" className="relative isolate overflow-hidden pt-24 md:pt-28">
       <div className="pointer-events-none absolute inset-0 bg-gradient-hero" aria-hidden />
       <div aria-hidden className="pointer-events-none absolute -right-28 top-24 h-80 w-80 rounded-full bg-orange-200/40 blur-3xl" />
       <div aria-hidden className="pointer-events-none absolute -bottom-32 left-[-8%] h-96 w-96 rounded-full bg-amber-100/70 blur-3xl" />
