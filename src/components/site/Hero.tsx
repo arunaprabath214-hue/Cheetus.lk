@@ -44,7 +44,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.65, delay: 0.08 }}
-            className="mt-6 max-w-3xl text-[2rem] font-extrabold leading-[1.18] tracking-tight text-charcoal sm:text-5xl md:text-[3.15rem] xl:text-[3.45rem]"
+            className="mt-6 max-w-3xl break-words text-[1.85rem] font-extrabold leading-[1.2] tracking-tight text-charcoal sm:text-4xl md:text-[2.7rem] xl:text-[3rem]"
           >
             <><span className="block text-orange-600">{t("heroTitle")}</span><span className="block text-charcoal">{t("heroTitleBlack")}</span></>
           </motion.h1>
@@ -90,12 +90,14 @@ export function Hero() {
           className="relative lg:col-span-5"
         >
           <div className="relative isolate min-h-[500px] overflow-hidden rounded-[2rem] border border-orange-100 bg-orange-950 shadow-[0_28px_80px_rgba(154,52,18,0.2)] sm:min-h-[560px]">
-            <div className="absolute inset-0 grid grid-cols-2 grid-rows-2 gap-1">
-              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=88" alt="" className="col-span-2 h-full w-full object-cover" />
-              <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=600&q=85" alt="" className="h-full w-full object-cover" />
-              <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=600&q=85" alt="" className="h-full w-full object-cover" />
-            </div>
-            <div className="absolute inset-0 bg-gradient-to-b from-orange-950/25 via-orange-950/35 to-orange-950/80" />
+            <img
+              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1400&q=90"
+              alt="Industrial engineering and manufacturing"
+              className="absolute inset-0 h-full w-full object-cover object-center"
+              fetchPriority="high"
+              decoding="async"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-orange-950/35 via-orange-950/45 to-orange-950/90" />
             <div aria-hidden className="pointer-events-none absolute -right-12 -top-12 z-[1] h-48 w-48 rounded-full border-[28px] border-white/20" />
             <div aria-hidden className="pointer-events-none absolute -bottom-16 -left-12 z-[1] h-56 w-56 rounded-full border-[34px] border-white/15" />
 
@@ -105,13 +107,13 @@ export function Hero() {
                 CHEETUS · GROW WITH US
               </div>
               <motion.div className="relative" animate={{ y: [0, -5, 0] }} transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}>
-                <div className="absolute -inset-4 rounded-[28%] bg-white/90 shadow-[0_16px_45px_rgba(255,255,255,0.25)]" />
+                <div className="absolute -inset-2 rounded-[22%] bg-white/95 shadow-[0_10px_30px_rgba(0,0,0,0.22)]" />
                 <img
                   src={cheetusOfficialLogo}
                   alt="Cheetus official company logo"
-                  width={220}
-                  height={220}
-                  className="relative h-36 w-36 rounded-[22%] object-cover shadow-2xl sm:h-48 sm:w-48"
+                  width={160}
+                  height={160}
+                  className="relative h-28 w-28 rounded-[22%] object-cover shadow-xl sm:h-36 sm:w-36"
                   style={{ clipPath: "inset(0 round 22%)" }}
                 />
               </motion.div>
