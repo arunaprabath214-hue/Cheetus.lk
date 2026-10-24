@@ -4,10 +4,11 @@ import { ArrowRight, ShieldCheck, Factory, Handshake, Store } from "lucide-react
 import { useApply } from "./ApplyContext";
 import { useLang } from "@/lib/i18n";
 import { cheetusOfficialLogo } from "@/lib/cheetus-logo";
+import { SITE } from "@/lib/site";
 
 export function Hero() {
   const { setOpen } = useApply();
-  const { t } = useLang();
+  const { lang, t } = useLang();
   const [transitioning, setTransitioning] = useState(false);
 
   useEffect(() => {
@@ -33,10 +34,10 @@ export function Hero() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 rounded-full border border-orange-200 bg-white/80 px-4 py-2 text-xs font-semibold text-charcoal shadow-sm backdrop-blur"
+            className="inline-flex items-center gap-2 rounded-2xl border border-orange-200 bg-white/90 px-4 py-3 text-xs font-semibold text-charcoal shadow-sm backdrop-blur"
           >
             <ShieldCheck className="h-4 w-4 text-primary" />
-            {t("pvBadge")}
+            <span className="flex flex-col text-left leading-tight"><span>{t("pvBadge")}</span><span className="mt-1 text-[10px] font-bold tracking-[0.08em]">{SITE.pv}</span></span>
           </motion.div>
 
           <motion.h1
@@ -45,7 +46,7 @@ export function Hero() {
             transition={{ duration: 0.65, delay: 0.08 }}
             className="mt-6 max-w-3xl text-[2rem] font-extrabold leading-[1.18] tracking-tight text-charcoal sm:text-5xl md:text-[3.15rem] xl:text-[3.45rem]"
           >
-            <span className="block text-orange-600">{t("heroTitle")}</span>
+            <><span className="block text-orange-600">{t("heroTitle")}</span><span className="block text-charcoal">{t("heroTitleBlack")}</span></>
           </motion.h1>
 
           <motion.p
