@@ -1,30 +1,32 @@
 import { motion } from "framer-motion";
 import { BadgeCheck, FileCheck2, FileText, HeadphonesIcon } from "lucide-react";
-
-const items = [
-  {
-    icon: BadgeCheck,
-    title: "Registered Company",
-    text: "Incorporated in Sri Lanka. PV 00279330.",
-  },
-  {
-    icon: FileCheck2,
-    title: "KYC Verified Process",
-    text: "Member identity and basic details are collected through a documented process.",
-  },
-  {
-    icon: FileText,
-    title: "Transparent Documentation",
-    text: "Registration records, payment confirmation, and invoices are handled with clarity.",
-  },
-  {
-    icon: HeadphonesIcon,
-    title: "Member Support",
-    text: "Our team supports members through WhatsApp, phone, and email.",
-  },
-];
+import { useLang } from "@/lib/i18n";
 
 export function TrustCards() {
+  const { lang } = useLang();
+  const items = [
+    {
+      icon: BadgeCheck,
+      title: lang === "si" ? "ලියාපදිංචි සමාගමක්" : "Registered Company",
+      text: lang === "si" ? "ශ්‍රී ලංකාවේ ලියාපදිංචි සමාගමක්. PV 00279330." : "Incorporated in Sri Lanka. PV 00279330.",
+    },
+    {
+      icon: FileCheck2,
+      title: lang === "si" ? "විධිමත් ලේඛන ක්‍රියාවලිය" : "Documented Process",
+      text: lang === "si" ? "සාමාජික තොරතුරු සහ අවශ්‍ය ලේඛන පියවරෙන් පියවර පරීක්ෂා කරයි." : "Member details and required documents are reviewed through a clear process.",
+    },
+    {
+      icon: FileText,
+      title: lang === "si" ? "ගෙවීම් පිළිබඳ පැහැදිලි බව" : "Clear Payment Information",
+      text: lang === "si" ? "ගෙවීම් තහවුරු කිරීම සහ ඉන්වොයිස් පිළිබඳ තොරතුරු පැහැදිලිව ලබාදෙයි." : "Payment confirmation and invoice information are communicated clearly.",
+    },
+    {
+      icon: HeadphonesIcon,
+      title: lang === "si" ? "සම්බන්ධතා සහාය" : "Member Support",
+      text: lang === "si" ? "දුරකථනයෙන්, WhatsApp හෝ විද්‍යුත් තැපෑලෙන් අප හා සම්බන්ධ විය හැකියි." : "Reach our team by phone, WhatsApp, or email.",
+    },
+  ];
+
   return (
     <section className="relative -mt-6 pb-4 md:pb-8">
       <div className="container-tight">

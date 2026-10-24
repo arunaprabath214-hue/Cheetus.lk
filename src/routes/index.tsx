@@ -19,21 +19,21 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: "Cheetus | සීට්ටු සාමාජික ලියාපදිංචිය සහ කළමනාකරණ සහාය",
+        title: "Cheetus | ශ්‍රී ලාංකීය කර්මාන්ත හා දේශීය ව්‍යාපාර දියුණුව",
       },
       {
         name: "description",
         content:
-          "ශ්‍රී ලංකාවේ සීට්ටු සාමාජික ලියාපදිංචිය, KYC ලේඛන ක්‍රියාවලිය සහ සාමාජික සහාය පිළිබඳ විස්තර දැනගන්න. Cheetus, Nugawela, Kandy.",
+          "Cheetus Investment Industrial Development (PVT) LTD සමාගමේ අරමුණු, සීට්ටු වැඩසටහන, සාමාජික ලියාපදිංචිය සහ KYC ක්‍රියාවලිය ගැන දැනගන්න. නුගවෙල, මහනුවර.",
       },
       {
         property: "og:title",
-        content: "Cheetus | සීට්ටු සාමාජික ලියාපදිංචිය සහ කළමනාකරණ සහාය",
+        content: "Cheetus | ශ්‍රී ලාංකීය කර්මාන්ත හා දේශීය ව්‍යාපාර දියුණුව",
       },
       {
         property: "og:description",
         content:
-          "ශ්‍රී ලංකාවේ සීට්ටු සාමාජික ලියාපදිංචිය සහ KYC ලේඛන ක්‍රියාවලිය පිළිබඳ විස්තර දැනගන්න.",
+          "චීට්ටු වැඩසටහන සහ ශ්‍රී ලාංකීය කර්මාන්ත හා දේශීය ව්‍යාපාර දියුණුව සඳහා Cheetus සමාගමේ අරමුණු ගැන දැනගන්න.",
       },
     ],
     links: [{ rel: "canonical", href: "https://cheetus.lk/" }],

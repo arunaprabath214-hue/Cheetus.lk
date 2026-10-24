@@ -78,12 +78,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
-        title: "Cheetus | සීට්ටු සාමාජික ලියාපදිංචිය සහ කළමනාකරණ සහාය",
+        title: "Cheetus | ශ්‍රී ලාංකීය කර්මාන්ත හා දේශීය ව්‍යාපාර දියුණුව",
       },
       {
         name: "description",
         content:
-          "ශ්‍රී ලංකාවේ සීට්ටු සාමාජික ලියාපදිංචිය, KYC ලේඛන ක්‍රියාවලිය සහ සාමාජික සහාය පිළිබඳ විස්තර දැනගන්න. Cheetus, Nugawela, Kandy.",
+          "චීට්ටු වැඩසටහන, සාමාජික ලියාපදිංචිය සහ ශ්‍රී ලාංකීය කර්මාන්ත හා දේශීය ව්‍යාපාර දියුණුව පිළිබඳ Cheetus සමාගමේ අරමුණු ගැන දැනගන්න. නුගවෙල, මහනුවර.",
       },
       {
         name: "author",
@@ -93,7 +93,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "Cheetus" },
       {
         property: "og:title",
-        content: "Cheetus | සීට්ටු සාමාජික ලියාපදිංචිය සහ කළමනාකරණ සහාය",
+        content: "Cheetus | ශ්‍රී ලාංකීය කර්මාන්ත හා දේශීය ව්‍යාපාර දියුණුව",
       },
       {
         property: "og:description",
